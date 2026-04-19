@@ -235,6 +235,27 @@ footer {
 }
 
 @media (max-width: 768px) {
+    section {
+        padding: 30px 0;
+    }
+
+    .hero-video-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+    }
+
+    .hero-video-container iframe {
+        position: static;
+        transform: none;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        min-width: 0;
+        min-height: 0;
+    }
+
     .hero-content {
         padding: 0 1rem;
     }
@@ -258,6 +279,16 @@ footer {
 
     .features-list {
         grid-template-columns: 1fr;
+    }
+
+    #import-usluga {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    #promo-dev {
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
     }
 }
 
