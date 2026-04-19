@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opel Ampera - Elektryczna Rewolucja</title>
+    <meta name="description"
+        content="Poznaj Opla Amperę - pionierski samochód elektryczny z systemem rozszerzonego zasięgu (REV). Dowiedz się więcej o baterii, zasięgu i generatorze.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="lang-switch">
+        <button onclick="setLanguage('pl')" id="lang-pl" class="active">PL</button>
+        <button onclick="setLanguage('en')" id="lang-en">EN</button>
+    </div>
+
+    <header>
+        <div class="hero-video-container">
+            <iframe id="hero-video" data-video-id="dd2OULeK8Eo" title="Opel Ampera Background Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="hero-content">
+            <h1 class="gradient-text" data-i18n="hero_title">OPEL AMPERA</h1>
+            <p data-i18n="hero_subtitle">Samochód elektryczny, który nie zna granic zasięgu.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+
+        <section id="specyfikacja">
+            <h2 class="section-title reveal" data-i18n="spec_title">Potężna Technologia</h2>
+            <div class="grid">
+                <div class="card reveal">
+                    <span class="label" data-i18n="spec_total_range_label">Zasięg Całkowity</span>
+                    <span class="value">> 500 <small>km</small></span>
+                    <p data-i18n="spec_total_range_desc">Łączny zasięg przy wykorzystaniu silnika spalinowego jako generatora.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="label" data-i18n="spec_comfort_label">Komfort Jazdy</span>
+                    <span class="value" data-i18n="spec_comfort_value">Automat</span>
+                    <p data-i18n="spec_comfort_desc">Płynny start bez szarpnięć i liniowe przyspieszenie charakterystyczne dla aut elektrycznych.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="label" data-i18n="spec_local_label">Jazda Lokalna</span>
+                    <span class="value">0 <small>zł</small></span>
+                    <p data-i18n="spec_local_desc">Codzienne dojazdy do pracy i na zakupy mogą kosztować Cię okrągłe zero złotych (przy PV).</p>
+                </div>
+                <div class="card reveal">
+                    <span class="label" data-i18n="spec_remote_label">Komfort</span>
+                    <span class="value" data-i18n="spec_remote_value">Zdalne Ogrzewanie</span>
+                    <p data-i18n="spec_remote_desc">Zdalne włączanie ogrzewania pilotem. Zapomnij o skrobaniu szyb zimą – śnieg łatwo schodzi z nagrzanego auta. Latem możesz zdalnie włączyć chłodzenie, by zawsze wsiadać do idealnie przygotowanego wnętrza.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="label" data-i18n="spec_fuel_label">spalanie w mieście</span>
+                    <span class="value">5.3 <small>L/100km</small></span>
+                    <p data-i18n="spec_fuel_desc">Średnie zużycie paliwa przy połowie poziomu baterii wynosi ok. 5.3 L/100km. Przy ekonomicznej jeździe na drogach lokalnych i ekspresowych (poniżej 100 km/h), bez problemu osiągniesz wynik 4.5 L/100km, co czyni Amperę liderem oszczędności w swojej klasie.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="label" data-i18n="spec_bat_new_label">Bateria (pojemność początkowa)</span>
+                    <span class="value">10.2 <small data-i18n="spec_netto">kWh netto</small></span>
+                    <p data-i18n="spec_bat_new_desc">Pojemność dostępna dla użytkownika gdy auto było nowe (2012-2014).</p>
+                    <div style="border-top: 1px solid rgba(255,255,255,0.1); margin: 1.5rem 0; padding-top: 1.5rem;">
+                        <span class="label" data-i18n="spec_bat_old_label">Bateria (po 14 latach)</span>
+                        <span class="value">ok. 9.2 <small data-i18n="spec_netto">kWh netto</small></span>
+                        <p data-i18n="spec_bat_old_desc">Typowy spadek pojemności o ok. 10–12% po 14 latach eksploatacji. To naturalny proces degradacji ogniw litowo-jonowych.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <span class="label" data-i18n="spec_hwy_label">Napęd na autostradzie</span>
+                    <span class="value" style="font-size: 1.8rem; line-height: 1.2;" data-i18n="spec_hwy_value">Silnik spalinowy <small style="display: block; font-size: 1rem; color: var(--text-muted);" data-i18n="spec_hwy_sub">napędza koła</small></span>
+                    <p data-i18n="spec_hwy_desc">Powyżej ok. 120 km/h silnik 1.4 Ecotec łączy się mechanicznie z kołami, wspomagając silnik elektryczny. Dzięki temu auto nie "męczy się" na długich trasach.</p>
+                    <hr style="margin: 1rem 0; border: none; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; list-style-type: disc;">
+                        <li data-i18n="spec_hwy_li1">Niższe spalanie na autostradzie (5-6 l/100km zamiast 7-8)</li>
+                        <li data-i18n="spec_hwy_li2">Niższe obroty – cichsza praca</li>
+                        <li data-i18n="spec_hwy_li3">Kierowca nie czuje przełączeń – system działa automatycznie</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <span class="label" data-i18n="spec_range_old_label">Zasięg po 14 latach</span>
+                    <span class="value">30-70 <small>km</small></span>
+                    <p data-i18n="spec_range_old_desc">Przy pojemności baterii ~9.0 kWh (spadek o ok. 11.8% względem nowej), Ampera wciąż oferuje realny zasięg EV.</p>
+                    <p style="font-size: 0.8rem; margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; color: var(--text-muted);">
+                        <strong data-i18n="spec_tip_title">Wskazówka:</strong> <span data-i18n="spec_tip_desc">Zaleca się nie rozładowywać baterii poniżej 3 kresek na wyświetlaczu, co ogranicza zużycie paliwa i chroni ogniwa. Rekomendujemy wybór zadbanych egzemplarzy z przebiegiem ok. 200 000 km.</span>
+                    </p>
+                </div>
+                <div class="card reveal">
+                    <span class="label" data-i18n="spec_cruise_label">Trasa</span>
+                    <span class="value" data-i18n="spec_cruise_value">Tempomat</span>
+                    <p data-i18n="spec_cruise_desc">Ułatwia pokonywanie długich dystansów, pozwalając na utrzymywanie stałej prędkości i odpoczynek prawej nogi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="import-usluga">
+            <div class="card reveal"
+                style="border-color: var(--accent-color); background: rgba(0, 242, 255, 0.05); margin-top: 2rem;">
+                <div class="grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: center;">
+                    <div>
+                        <h2 class="gradient-text" style="margin-bottom: 1rem; text-align: left;" data-i18n="import_title">Usługa sprowadzania Opla Ampery</h2>
+                        <p data-i18n="import_desc">Marzysz o własnej Amperze? Pomożemy Ci przejść przez cały proces bezpiecznie i bez stresu. Znamy ten model od podszewki.</p>
+                        <ul class="features-list" style="margin-top: 1.5rem; grid-template-columns: 1fr; gap: 0.8rem;">
+                            <li data-i18n="import_li1">Weryfikacja kondycji baterii przed zakupem</li>
+                            <li data-i18n="import_li2">Pełna obsługa logistyczna i formalna</li>
+                            <li data-i18n="import_li3">Transport auta pod Twój dom</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 2rem;">
+                        <span class="label" data-i18n="import_investment">Twoja Inwestycja</span>
+                        <span class="value" style="color: var(--accent-color); font-size: 2.5rem;">3900 <small data-i18n="import_netto">zł netto</small></span>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="import_fee">(prowizja za kompleksową usługę)</p>
+                        <br>
+                        <a href="mailto:say5orders@gmail.com" class="btn" data-i18n="import_btn">Skonsultuj Import</a>
+                        <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);"><span data-i18n="import_or">lub wyślij e-mail:</span><br>
+                            <a href="mailto:say5orders@gmail.com" style="color: var(--accent-color); text-decoration: none; font-weight: bold;">say5orders@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="historia">
+            <div class="info-block">
+                <div class="info-text reveal">
+                    <h2 class="gradient-text" data-i18n="hist_title">Dziedzictwo i Sukcesy</h2>
+                    <p data-i18n="hist_p1">Ampera, bazująca na płycie podłogowej Chevroleta Volta, to prawdziwa legenda. Wraz z bliźniaczym modelem zdobyła prestiżowy tytuł <strong>Samochodu Roku 2012</strong>.</p>
+                    <br>
+                    <p data-i18n="hist_p2">W tym samym roku udowodniła swoją niezawodność, wygrywając 13. edycję Międzynarodowego Rajdu Monte Carlo samochodów elektrycznych i z napędem alternatywnym.</p>
+                </div>
+                <div class="info-image reveal">
+                    <div class="award-badge">EUROPEAN CAR OF THE YEAR 2012</div>
+                    <img src="ampera.png" alt="Opel Ampera Awards" style="width: 100%; display: block;">
+                </div>
+            </div>
+        </section>
+
+        <section id="generator">
+            <div class="grid">
+                <div class="card reveal">
+                    <h3 data-i18n="gen_engine_title">Silnik Spalinowy Ecotec</h3>
+                    <p data-i18n="gen_engine_desc">Pojemność 1360 cm³, moc 86 KM (4800 obr/min) i moment 130 Nm. Działa wyłącznie jako generator, utrzymując poziom naładowania baterii.</p>
+                </div>
+                <div class="card reveal">
+                    <h3 data-i18n="gen_home_title">Ładowanie w Domu</h3>
+                    <p data-i18n="gen_home_desc">Pełne naładowanie akumulatora z domowego gniazdka 230 V zajmuje zaledwie około 4-5 godzin, co pozwala na codzienne dojazdy bez użycia kropli benzyny.</p>
+                </div>
+                <div class="card reveal">
+                    <h3 data-i18n="gen_solar_title">Darmowa Energia ze Słońca</h3>
+                    <p data-i18n="gen_solar_desc">Dzięki domowej instalacji fotowoltaicznej możesz ładować Amperę całkowicie za darmo, wykorzystując czystą energię prosto ze słońca.</p>
+                </div>
+                <div class="card reveal" style="padding: 0; overflow: hidden; min-height: 250px;">
+                    <img src="white_ampera.png" alt="Biała Opel Ampera"
+                        style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+            </div>
+        </section>
+
+        <section id="wyposazenie">
+            <h2 class="section-title reveal" data-i18n="equip_title">Wyposażenie Premium</h2>
+            <div class="card reveal">
+                <ul class="features-list">
+                    <li data-i18n="equip_li1">8 poduszek powietrznych (w tym kolanowe)</li>
+                    <li data-i18n="equip_li2">System multimedialny z ekranem 7"</li>
+                    <li data-i18n="equip_li3">Dostęp bezkluczykowy (Keyless)</li>
+                    <li data-i18n="equip_li4">Światła do jazdy dziennej LED</li>
+                    <li data-i18n="equip_li5">Odzysk energii podczas hamowania</li>
+                    <li data-i18n="equip_li6">Automatyczna klimatyzacja i tempomat</li>
+                    <li data-i18n="equip_li7">17-calowe felgi aluminiowe</li>
+                    <li data-i18n="equip_li8">System Bluetooth i czujnik deszczu</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="zakonczenie">
+            <div class="card reveal"
+                style="text-align: center; max-width: 800px; margin: 0 auto; border-color: #ff4d4d;">
+                <p data-i18n="conc_p1">Produkcja tego pionierskiego modelu została zakończona w 2014 roku, czyniąc go dziś unikalnym i poszukiwanym klasykiem nowoczesnej elektromobilności.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer_copy">&copy; 2026 Opel Ampera Fan Project. Wszystkie materiały wideo i dane techniczne należą do ich właścicieli.</p>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            pl: {
+                hero_title: "OPEL AMPERA",
+                hero_subtitle: "Samochód elektryczny, który nie zna granic zasięgu.",
+                spec_title: "Potężna Technologia",
+                spec_total_range_label: "Zasięg Całkowity",
+                spec_total_range_desc: "Łączny zasięg przy wykorzystaniu silnika spalinowego jako generatora.",
+                spec_comfort_label: "Komfort Jazdy",
+                spec_comfort_value: "Automat",
+                spec_comfort_desc: "Płynny start bez szarpnięć i liniowe przyspieszenie charakterystyczne dla aut elektrycznych.",
+                spec_local_label: "Jazda Lokalna",
+                spec_local_desc: "Codzienne dojazdy do pracy i na zakupy mogą kosztować Cię okrągłe zero złotych (przy PV).",
+                spec_remote_label: "Komfort",
+                spec_remote_value: "Zdalne Ogrzewanie",
+                spec_remote_desc: "Zdalne włączanie ogrzewania pilotem. Zapomnij o skrobaniu szyb zimą – śnieg łatwo schodzi z nagrzanego auta. Latem możesz zdalnie włączyć chłodzenie, by zawsze wsiadać do idealnie przygotowanego wnętrza.",
+                spec_fuel_label: "spalanie w mieście",
+                spec_fuel_desc: "Średnie zużycie paliwa przy połowie poziomu baterii wynosi ok. 5.3 L/100km. Przy ekonomicznej jeździe na drogach lokalnych i ekspresowych (poniżej 100 km/h), bez problemu osiągniesz wynik 4.5 L/100km, co czyni Amperę liderem oszczędności w swojej klasie.",
+                spec_bat_new_label: "Bateria (pojemność początkowa)",
+                spec_bat_new_desc: "Pojemność dostępna dla użytkownika gdy auto było nowe (2012-2014).",
+                spec_bat_old_label: "Bateria (po 14 latach)",
+                spec_bat_old_desc: "Typowy spadek pojemności o ok. 10–12% po 14 latach eksploatacji. To naturalny proces degradacji ogniw litowo-jonowych.",
+                spec_netto: "kWh netto",
+                spec_hwy_label: "Napęd na autostradzie",
+                spec_hwy_value: "Silnik spalinowy",
+                spec_hwy_sub: "napędza koła",
+                spec_hwy_desc: "Powyżej ok. 120 km/h silnik 1.4 Ecotec łączy się mechanicznie z kołami, wspomagając silnik elektryczny. Dzięki temu auto nie \"męczy się\" na długich trasach.",
+                spec_hwy_li1: "Niższe spalanie na autostradzie (5-6 l/100km zamiast 7-8)",
+                spec_hwy_li2: "Niższe obroty – cichsza praca",
+                spec_hwy_li3: "Kierowca nie czuje przełączeń – system działa automatycznie",
+                spec_range_old_label: "Zasięg po 14 latach",
+                spec_range_old_desc: "Przy pojemności baterii ~9.0 kWh (spadek o ok. 11.8% względem nowej), Ampera wciąż oferuje realny zasięg EV.",
+                spec_tip_title: "Wskazówka:",
+                spec_tip_desc: "Zaleca się nie rozładowywać baterii poniżej 3 kresek na wyświetlaczu, co ogranicza zużycie paliwa i chroni ogniwa. Rekomendujemy wybór zadbanych egzemplarzy z przebiegiem ok. 200 000 km.",
+                spec_cruise_label: "Trasa",
+                spec_cruise_value: "Tempomat",
+                spec_cruise_desc: "Ułatwia pokonywanie długich dystansów, pozwalając na utrzymywanie stałej prędkości i odpoczynek prawej nogi.",
+                import_title: "Usługa sprowadzania Opla Ampery",
+                import_desc: "Marzysz o własnej Amperze? Pomożemy Ci przejść przez cały proces bezpiecznie i bez stresu. Znamy ten model od podszewki.",
+                import_li1: "Weryfikacja kondycji baterii przed zakupem",
+                import_li2: "Pełna obsługa logistyczna i formalna",
+                import_li3: "Transport auta pod Twój dom",
+                import_investment: "Twoja Inwestycja",
+                import_netto: "zł netto",
+                import_fee: "(prowizja za kompleksową usługę)",
+                import_btn: "Skonsultuj Import",
+                import_or: "lub wyślij e-mail:",
+                hist_title: "Dziedzictwo i Sukcesy",
+                hist_p1: "Ampera, bazująca na płycie podłogowej Chevroleta Volta, to prawdziwa legenda. Wraz z bliźniaczym modelem zdobyła prestiżowy tytuł <strong>Samochodu Roku 2012</strong>.",
+                hist_p2: "W tym samym roku udowodniła swoją niezawodność, wygrywając 13. edycję Międzynarodowego Rajdu Monte Carlo samochodów elektrycznych i z napędem alternatywnym.",
+                gen_engine_title: "Silnik Spalinowy Ecotec",
+                gen_engine_desc: "Pojemność 1360 cm³, moc 86 KM (4800 obr/min) i moment 130 Nm. Działa wyłącznie jako generator, utrzymując poziom naładowania baterii.",
+                gen_home_title: "Ładowanie w Domu",
+                gen_home_desc: "Pełne naładowanie akumulatora z domowego gniazdka 230 V zajmuje zaledwie około 4-5 godzin, co pozwala na codzienne dojazdy bez użycia kropli benzyny.",
+                gen_solar_title: "Darmowa Energia ze Słońca",
+                gen_solar_desc: "Dzięki domowej instalacji fotowoltaicznej możesz ładować Amperę całkowicie za darmo, wykorzystując czystą energię prosto ze słońca.",
+                equip_title: "Wyposażenie Premium",
+                equip_li1: "8 poduszek powietrznych (w tym kolanowe)",
+                equip_li2: "System multimedialny z ekranem 7\"",
+                equip_li3: "Dostęp bezkluczykowy (Keyless)",
+                equip_li4: "Światła do jazdy dziennej LED",
+                equip_li5: "Odzysk energii podczas hamowania",
+                equip_li6: "Automatyczna klimatyzacja i tempomat",
+                equip_li7: "17-calowe felgi aluminiowe",
+                equip_li8: "System Bluetooth i czujnik deszczu",
+                conc_p1: "Produkcja tego pionierskiego modelu została zakończona w 2014 roku, czyniąc go dziś unikalnym i poszukiwanym klasykiem nowoczesnej elektromobilności.",
+                footer_copy: "&copy; 2026 Opel Ampera Fan Project. Wszystkie materiały wideo i dane techniczne należą do ich właścicieli."
+            },
+            en: {
+                hero_title: "OPEL AMPERA",
+                hero_subtitle: "An electric car that knows no range limits.",
+                spec_title: "Powerful Technology",
+                spec_total_range_label: "Total Range",
+                spec_total_range_desc: "Combined range using the internal combustion engine as a generator.",
+                spec_comfort_label: "Driving Comfort",
+                spec_comfort_value: "Automatic",
+                spec_comfort_desc: "Smooth start with no jerks and linear acceleration characteristic of electric vehicles.",
+                spec_local_label: "Local Driving",
+                spec_local_desc: "Daily commuting and shopping can cost you exactly zero (with solar PV).",
+                spec_remote_label: "Comfort",
+                spec_remote_value: "Remote Heating",
+                spec_remote_desc: "Remote heating activation via key fob. Forget about scraping ice in winter – snow slides off easily. In summer, you can remotely turn on cooling for a perfect cabin temperature.",
+                spec_fuel_label: "fuel consumption",
+                spec_fuel_desc: "Average fuel consumption at half battery level is approx. 5.3 L/100km. With economical driving (below 100 km/h), you can easily reach 4.5 L/100km, making Ampera a leader in its class.",
+                spec_bat_new_label: "Battery (Initial Capacity)",
+                spec_bat_new_desc: "Capacity available to the user when the car was new (2012-2014).",
+                spec_bat_old_label: "Battery (After 14 Years)",
+                spec_bat_old_desc: "Typical capacity drop of about 10–12% after 14 years. This is a natural degradation process of lithium-ion cells.",
+                spec_netto: "kWh net",
+                spec_hwy_label: "Highway Drive",
+                spec_hwy_value: "Combustion Engine",
+                spec_hwy_sub: "powers the wheels",
+                spec_hwy_desc: "Above approx. 120 km/h, the 1.4 Ecotec engine connects mechanically to the wheels, assisting the electric motor for better high-speed efficiency.",
+                spec_hwy_li1: "Lower highway fuel consumption (5-6 l/100km instead of 7-8)",
+                spec_hwy_li2: "Lower RPM – quieter operation",
+                spec_hwy_li3: "Seamless transitions – the system works automatically",
+                spec_range_old_label: "Range after 14 Years",
+                spec_range_old_desc: "With a battery capacity of ~9.0 kWh (~11.8% drop), the Ampera still offers a real EV range.",
+                spec_tip_title: "Tip:",
+                spec_tip_desc: "It is recommended not to discharge the battery below 3 bars to protect the cells and limit fuel usage. We recommend choosing well-maintained units with about 200,000 km.",
+                spec_cruise_label: "Road Trip",
+                spec_cruise_value: "Cruise Control",
+                spec_cruise_desc: "Makes long distances easier by maintaining a constant speed and letting your right foot rest.",
+                import_title: "Opel Ampera Import Service",
+                import_desc: "Dreaming of your own Ampera? We'll help you through the whole process safely and stress-free. We know this model inside out.",
+                import_li1: "Battery health verification before purchase",
+                import_li2: "Full logistics and formalities handling",
+                import_li3: "Car delivery to your doorstep",
+                import_investment: "Your Investment",
+                import_netto: "net",
+                import_fee: "(comprehensive service fee)",
+                import_btn: "Consult Import",
+                import_or: "or send an email:",
+                hist_title: "Heritage & Success",
+                hist_p1: "The Ampera, based on the Chevrolet Volt platform, is a true legend. Along with its twin model, it won the prestigious <strong>Car of the Year 2012</strong> award.",
+                hist_p2: "In the same year, it proved its reliability by winning the 13th International Monte Carlo Rally for electric and alternative propulsion vehicles.",
+                gen_engine_title: "Ecotec Combustion Engine",
+                gen_engine_desc: "1360 cm³ capacity, 86 HP (4800 rpm), and 130 Nm torque. Works exclusively as a generator to maintain battery charge.",
+                gen_home_title: "Home Charging",
+                gen_home_desc: "Full battery charge from a 230V home socket takes about 4-5 hours, allowing for daily commuting without using a drop of gasoline.",
+                gen_solar_title: "Free Solar Energy",
+                gen_solar_desc: "With a home solar PV system, you can charge your Ampera for free, using clean energy straight from the sun.",
+                equip_title: "Premium Equipment",
+                equip_li1: "8 airbags (including knee airbags)",
+                equip_li2: "7\" multimedia system screen",
+                equip_li3: "Keyless entry and start",
+                equip_li4: "LED daytime running lights",
+                equip_li5: "Brake energy recuperation",
+                equip_li6: "Automatic climate control & cruise control",
+                equip_li7: "17-inch alloy wheels",
+                equip_li8: "Bluetooth system & rain sensor",
+                conc_p1: "Production of this pioneering model ended in 2014, making it a unique and sought-after classic of modern electromobility today.",
+                footer_copy: "&copy; 2026 Opel Ampera Fan Project. All video materials and technical data belong to their respective owners."
+            }
+        };
+
+        window.setLanguage = function (lang) {
+            document.documentElement.lang = lang;
+            try {
+                localStorage.setItem('preferredLang', lang);
+            } catch (e) { }
+
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            document.querySelectorAll('.lang-switch button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            const activeBtn = document.getElementById(`lang-${lang}`);
+            if (activeBtn) activeBtn.classList.add('active');
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroVideo = document.getElementById('hero-video');
+            if (heroVideo) {
+                const videoId = heroVideo.dataset.videoId;
+                const params = new URLSearchParams({
+                    autoplay: '1',
+                    mute: '1',
+                    loop: '1',
+                    playlist: videoId,
+                    controls: '0',
+                    rel: '0',
+                    playsinline: '1'
+                });
+                if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+                    params.set('origin', window.location.origin);
+                }
+                heroVideo.src = `https://www.youtube-nocookie.com/embed/${videoId}?${params.toString()}`;
+            }
+
+            const observerOptions = { threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            const revealElements = document.querySelectorAll('.reveal');
+            revealElements.forEach(el => observer.observe(el));
+
+            const btnPl = document.getElementById('lang-pl');
+            const btnEn = document.getElementById('lang-en');
+            if (btnPl) btnPl.addEventListener('click', () => window.setLanguage('pl'));
+            if (btnEn) btnEn.addEventListener('click', () => window.setLanguage('en'));
+
+            let savedLang = 'pl';
+            try {
+                savedLang = localStorage.getItem('preferredLang') || 'pl';
+            } catch (e) { }
+            window.setLanguage(savedLang);
+        });
+    </script>
+</body>
+
+</html>
